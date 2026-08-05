@@ -1,0 +1,15 @@
+{
+    "setting-enabled": "SpecReturn enabled",
+    "setting-enabled-desc": "When ON, the position you were standing on when you switched from Survival to Spectator gets remembered. Returning to Survival teleports you back. Takes effect at the start of your next play session — flip it mid-session with the /specreturn command or the hotkey instead.",
+
+    "hotkey-toggle": "Toggle SpecReturn",
+
+    "cmd-desc": "Toggle SpecReturn for yourself. Usage: /specreturn [on|off]. With no argument, flips the current state.",
+
+    "msg-enabled": "SpecReturn is now ON. Survival -> Spectator will remember your position; returning to Survival will teleport you back.",
+    "msg-disabled": "SpecReturn is now OFF. Position tracking inactive; any remembered position has been cleared.",
+    "msg-saved": "SpecReturn: remembered your Survival position at {0}.",
+    "msg-returned": "SpecReturn: teleported you back to your Survival position.",
+    "msg-status-on": "SpecReturn: currently ON.",
+    "msg-status-off": "SpecReturn: currently OFF."
+}

@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "patches": {
+        "boolean": {
+            "lionfoxspecreturn:config/lionfoxspecreturn.json": {
+                "enabled": "enabled"
+            }
+        }
+    },
+    "settings": [
+        {
+            "code": "enabled",
+            "type": "boolean",
+            "ingui": "lionfoxspecreturn:setting-enabled",
+            "default": true
+        }
+    ]
+}
