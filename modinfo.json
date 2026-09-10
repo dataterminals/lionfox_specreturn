@@ -3,12 +3,14 @@
     "modid": "lionfoxspecreturn",
     "name": "SpecReturn",
     "description": "Remembers where you were standing when you switch from Survival into Spectator, and teleports you back when you return to Survival. Toggle the feature with the /specreturn chat command, a (default-unbound) hotkey in the ESC > Controls menu, or the ConfigLib visual config panel.",
-    "authors": [ "lionfox" ],
-    "version": "1.0.0",
+    "authors": [
+        "lionfox"
+    ],
+    "version": "1.1.0",
     "side": "Universal",
     "requiredOnClient": true,
     "requiredOnServer": true,
     "dependencies": {
-        "game": "1.21.6"
+        "game": "1.22.0"
     }
 }

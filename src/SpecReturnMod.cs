@@ -285,7 +285,7 @@ namespace lionfox_specreturn
             {
                 if (s.SavedPos == null && byPlayer.Entity != null)
                 {
-                    var pos = byPlayer.Entity.ServerPos;
+                    var pos = byPlayer.Entity.Pos;
                     s.SavedPos = new Vec3d(pos.X, pos.Y, pos.Z);
                     sapi?.Logger.Notification($"[SpecReturn] {byPlayer.PlayerName}: saved survival pos at ({pos.X:F1}, {pos.Y:F1}, {pos.Z:F1}).");
                     SendChatMessage(byPlayer, Lang.Get("lionfoxspecreturn:msg-saved", $"({pos.X:F1}, {pos.Y:F1}, {pos.Z:F1})"));
