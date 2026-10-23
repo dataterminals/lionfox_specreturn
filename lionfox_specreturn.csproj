@@ -10,7 +10,7 @@
          zip from it, and two different builds sharing one version string is the
          trap that produced two distinct torchesheat_2.0.0.zip files on
          2026-09-09 - the filename cannot tell them apart. -->
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <!-- The repo root IS the loadable mod folder: modinfo.json, assets/ and the
          built DLL sit side by side, and all three are tracked. Do not "tidy"
          this into bin/ without also fixing what git tracks. -->

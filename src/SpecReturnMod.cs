@@ -208,7 +208,7 @@ namespace lionfox_specreturn
                 var bytes = player.WorldData.GetModdata(ModdataKey);
                 if (bytes == null || bytes.Length == 0) return null;
 
-                var tree = SerializerUtil.Deserialize<TreeAttribute>(bytes);
+                var tree = TreeAttribute.CreateFromBytes(bytes);
                 var st = new PlayerState
                 {
                     Enabled = tree.GetBool("enabled", config.enabled),
@@ -242,7 +242,10 @@ namespace lionfox_specreturn
                     tree.SetDouble("savedY", s.SavedPos.Y);
                     tree.SetDouble("savedZ", s.SavedPos.Z);
                 }
-                player.WorldData.SetModdata(ModdataKey, SerializerUtil.Serialize(tree));
+                // TreeAttribute writes its own binary format. SerializerUtil is protobuf-net, which
+                // sees a TreeAttribute as a collection of IAttribute and throws "No serializer
+                // defined for type IAttribute", so nothing was ever saved before 1.1.1.
+                player.WorldData.SetModdata(ModdataKey, tree.ToBytes());
             }
             catch (Exception e)
             {
